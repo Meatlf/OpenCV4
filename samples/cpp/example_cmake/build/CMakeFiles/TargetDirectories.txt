@@ -1,0 +1,5 @@
+/home/ttz/git/opencv-4.3.0/samples/cpp/example_cmake/build/CMakeFiles/rebuild_cache.dir
+/home/ttz/git/opencv-4.3.0/samples/cpp/example_cmake/build/CMakeFiles/edit_cache.dir
+/home/ttz/git/opencv-4.3.0/samples/cpp/example_cmake/build/CMakeFiles/convexhull.dir
+/home/ttz/git/opencv-4.3.0/samples/cpp/example_cmake/build/CMakeFiles/opencv_example.dir
+/home/ttz/git/opencv-4.3.0/samples/cpp/example_cmake/build/CMakeFiles/contours2.dir
