@@ -724,6 +724,8 @@ lib/libopencv_features2d.so.4.3.0: modules/features2d/CMakeFiles/opencv_features
 lib/libopencv_features2d.so.4.3.0: modules/features2d/CMakeFiles/opencv_features2d.dir/build.make
 lib/libopencv_features2d.so.4.3.0: lib/libopencv_flann.so.4.3.0
 lib/libopencv_features2d.so.4.3.0: lib/libopencv_imgproc.so.4.3.0
+lib/libopencv_features2d.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_features2d.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_features2d.so.4.3.0: lib/libopencv_core.so.4.3.0
 lib/libopencv_features2d.so.4.3.0: modules/features2d/CMakeFiles/opencv_features2d.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ttz/git/opencv-4.3.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX shared library ../../lib/libopencv_features2d.so"

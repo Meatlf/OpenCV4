@@ -233,9 +233,8 @@ CLAMDFFT_ROOT_DIR:PATH=CLAMDFFT_ROOT_DIR-NOTFOUND
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
 
-//Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
-// CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
-CMAKE_BUILD_TYPE:STRING=RELEASE
+//No help, variable specified on the command line.
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -312,8 +311,8 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE:STRING=
 //Flags used by the linker during Release with Debug Info builds.
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
-//Enable/Disable output of compile commands during generation.
-CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=OFF
+//No help, variable specified on the command line.
+CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 
 //User executables (bin)
 CMAKE_INSTALL_BINDIR:PATH=bin
@@ -1063,6 +1062,15 @@ ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
 ade_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
+ippiw_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippiw
+
+//Dependencies for target
+ippiw_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+ippiw_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/iw
+
+//Value Computed by CMake
 ittnotify_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/3rdparty/ittnotify
 
 //Dependencies for the target
@@ -1090,7 +1098,7 @@ opencv_annotation_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/apps/annotation
 opencv_calib3d_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/calib3d
 
 //Dependencies for the target
-opencv_calib3d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;dl;general;m;general;pthread;general;rt;
+opencv_calib3d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_calib3d_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/calib3d
@@ -1099,7 +1107,7 @@ opencv_calib3d_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/calib3d
 opencv_core_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/core
 
 //Dependencies for the target
-opencv_core_LIB_DEPENDS:STATIC=general;dl;general;m;general;pthread;general;rt;general;tbb;general;/usr/lib/x86_64-linux-gnu/libz.so;general;ittnotify;
+opencv_core_LIB_DEPENDS:STATIC=general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;tbb;general;/usr/lib/x86_64-linux-gnu/libz.so;general;ittnotify;
 
 //Value Computed by CMake
 opencv_core_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/core
@@ -1108,7 +1116,7 @@ opencv_core_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/core
 opencv_dnn_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/dnn
 
 //Dependencies for the target
-opencv_dnn_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;libprotobuf;
+opencv_dnn_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;libprotobuf;
 
 //Add performance tests of Caffe framework
 opencv_dnn_PERF_CAFFE:BOOL=OFF
@@ -1123,7 +1131,7 @@ opencv_dnn_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/dnn
 opencv_features2d_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/features2d
 
 //Dependencies for the target
-opencv_features2d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;
+opencv_features2d_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_features2d_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/features2d
@@ -1132,7 +1140,7 @@ opencv_features2d_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/features2
 opencv_flann_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/flann
 
 //Dependencies for the target
-opencv_flann_LIB_DEPENDS:STATIC=general;opencv_core;general;dl;general;m;general;pthread;general;rt;
+opencv_flann_LIB_DEPENDS:STATIC=general;opencv_core;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_flann_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/flann
@@ -1141,7 +1149,7 @@ opencv_flann_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/flann
 opencv_gapi_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/gapi
 
 //Dependencies for the target
-opencv_gapi_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ade;general;tbb;
+opencv_gapi_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;ade;general;tbb;
 
 //Value Computed by CMake
 opencv_gapi_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/gapi
@@ -1150,7 +1158,7 @@ opencv_gapi_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/gapi
 opencv_highgui_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/highgui
 
 //Dependencies for the target
-opencv_highgui_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;dl;general;m;general;pthread;general;rt;general;/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;general;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;general;/usr/lib/x86_64-linux-gnu/libcairo.so;general;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;general;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;general;/usr/lib/x86_64-linux-gnu/libfontconfig.so;general;/usr/lib/x86_64-linux-gnu/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so;
+opencv_highgui_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;general;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;general;/usr/lib/x86_64-linux-gnu/libcairo.so;general;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;general;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;general;/usr/lib/x86_64-linux-gnu/libfontconfig.so;general;/usr/lib/x86_64-linux-gnu/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so;
 
 //Value Computed by CMake
 opencv_highgui_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/highgui
@@ -1159,7 +1167,7 @@ opencv_highgui_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/highgui
 opencv_imgcodecs_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/imgcodecs
 
 //Dependencies for the target
-opencv_imgcodecs_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libjpeg.so;general;/usr/lib/x86_64-linux-gnu/libwebp.so;general;/usr/lib/x86_64-linux-gnu/libpng.so;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libtiff.so;general;openjp2;general;/usr/lib/x86_64-linux-gnu/libImath.so;general;/usr/lib/x86_64-linux-gnu/libIlmImf.so;general;/usr/lib/x86_64-linux-gnu/libIex.so;general;/usr/lib/x86_64-linux-gnu/libHalf.so;general;/usr/lib/x86_64-linux-gnu/libIlmThread.so;
+opencv_imgcodecs_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libjpeg.so;general;/usr/lib/x86_64-linux-gnu/libwebp.so;general;/usr/lib/x86_64-linux-gnu/libpng.so;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libtiff.so;general;openjp2;general;/usr/lib/x86_64-linux-gnu/libImath.so;general;/usr/lib/x86_64-linux-gnu/libIlmImf.so;general;/usr/lib/x86_64-linux-gnu/libIex.so;general;/usr/lib/x86_64-linux-gnu/libHalf.so;general;/usr/lib/x86_64-linux-gnu/libIlmThread.so;
 
 //Value Computed by CMake
 opencv_imgcodecs_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/imgcodecs
@@ -1168,7 +1176,7 @@ opencv_imgcodecs_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/imgcodecs
 opencv_imgproc_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/imgproc
 
 //Dependencies for the target
-opencv_imgproc_LIB_DEPENDS:STATIC=general;opencv_core;general;dl;general;m;general;pthread;general;rt;
+opencv_imgproc_LIB_DEPENDS:STATIC=general;opencv_core;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_imgproc_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/imgproc
@@ -1189,7 +1197,7 @@ opencv_java_bindings_generator_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modu
 opencv_ml_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/ml
 
 //Dependencies for the target
-opencv_ml_LIB_DEPENDS:STATIC=general;opencv_core;general;dl;general;m;general;pthread;general;rt;
+opencv_ml_LIB_DEPENDS:STATIC=general;opencv_core;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_ml_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/ml
@@ -1198,7 +1206,7 @@ opencv_ml_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/ml
 opencv_objdetect_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/objdetect
 
 //Dependencies for the target
-opencv_objdetect_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;quirc;
+opencv_objdetect_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;quirc;
 
 //Value Computed by CMake
 opencv_objdetect_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/objdetect
@@ -1207,7 +1215,7 @@ opencv_objdetect_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/objdetect
 opencv_photo_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/photo
 
 //Dependencies for the target
-opencv_photo_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;
+opencv_photo_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_photo_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/photo
@@ -1228,7 +1236,7 @@ opencv_python_tests_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/python/
 opencv_stitching_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/stitching
 
 //Dependencies for the target
-opencv_stitching_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;
+opencv_stitching_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_stitching_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/stitching
@@ -1237,7 +1245,7 @@ opencv_stitching_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/stitching
 opencv_ts_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/ts
 
 //Dependencies for the target
-opencv_ts_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;dl;general;m;general;pthread;general;rt;
+opencv_ts_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_ts_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/ts
@@ -1252,7 +1260,7 @@ opencv_version_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/apps/version
 opencv_video_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/video
 
 //Dependencies for the target
-opencv_video_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;
+opencv_video_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_video_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/video
@@ -1261,7 +1269,7 @@ opencv_video_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/video
 opencv_videoio_BINARY_DIR:STATIC=/home/ttz/git/opencv-4.3.0/build/modules/videoio
 
 //Dependencies for the target
-opencv_videoio_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;dl;general;m;general;pthread;general;rt;
+opencv_videoio_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 
 //Value Computed by CMake
 opencv_videoio_SOURCE_DIR:STATIC=/home/ttz/git/opencv-4.3.0/modules/videoio
@@ -1519,7 +1527,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=57
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=58
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -2256,6 +2264,7 @@ LAPACK_openblas_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LAPACK_vecLib_LIBRARY
 LAPACK_vecLib_LIBRARY-ADVANCED:INTERNAL=1
 OCV_DOWNLOAD_ADE_HASH_3rdparty_ade_v0_1_1f_zip:INTERNAL=b624b995ec9c439cbc2e9e6ee940d3a2
+OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2020_lnx_intel64_20191018_general_tgz:INTERNAL=7421de0095c7a39162ae13a6098782f9
 //ADVANCED property for variable: OPENCL_INCLUDE_DIR
 OPENCL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENCL_LIBRARY

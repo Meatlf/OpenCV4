@@ -2377,6 +2377,8 @@ lib/libopencv_imgproc.so.4.3.0: modules/imgproc/CMakeFiles/opencv_imgproc.dir/su
 lib/libopencv_imgproc.so.4.3.0: modules/imgproc/CMakeFiles/opencv_imgproc.dir/sumpixels.avx512_skx.cpp.o
 lib/libopencv_imgproc.so.4.3.0: modules/imgproc/CMakeFiles/opencv_imgproc.dir/build.make
 lib/libopencv_imgproc.so.4.3.0: lib/libopencv_core.so.4.3.0
+lib/libopencv_imgproc.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_imgproc.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_imgproc.so.4.3.0: modules/imgproc/CMakeFiles/opencv_imgproc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ttz/git/opencv-4.3.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking CXX shared library ../../lib/libopencv_imgproc.so"
 	cd /home/ttz/git/opencv-4.3.0/build/modules/imgproc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_imgproc.dir/link.txt --verbose=$(VERBOSE)

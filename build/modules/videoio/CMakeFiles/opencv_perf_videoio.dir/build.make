@@ -144,6 +144,8 @@ bin/opencv_perf_videoio: modules/videoio/CMakeFiles/opencv_perf_videoio.dir/perf
 bin/opencv_perf_videoio: modules/videoio/CMakeFiles/opencv_perf_videoio.dir/build.make
 bin/opencv_perf_videoio: lib/libopencv_ts.a
 bin/opencv_perf_videoio: lib/libopencv_highgui.so.4.3.0
+bin/opencv_perf_videoio: 3rdparty/lib/libippiw.a
+bin/opencv_perf_videoio: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_perf_videoio: lib/libopencv_videoio.so.4.3.0
 bin/opencv_perf_videoio: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_perf_videoio: lib/libopencv_imgproc.so.4.3.0

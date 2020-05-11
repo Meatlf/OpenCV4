@@ -434,6 +434,8 @@ lib/libopencv_photo.so.4.3.0: modules/photo/CMakeFiles/opencv_photo.dir/src/tone
 lib/libopencv_photo.so.4.3.0: modules/photo/CMakeFiles/opencv_photo.dir/opencl_kernels_photo.cpp.o
 lib/libopencv_photo.so.4.3.0: modules/photo/CMakeFiles/opencv_photo.dir/build.make
 lib/libopencv_photo.so.4.3.0: lib/libopencv_imgproc.so.4.3.0
+lib/libopencv_photo.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_photo.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_photo.so.4.3.0: lib/libopencv_core.so.4.3.0
 lib/libopencv_photo.so.4.3.0: modules/photo/CMakeFiles/opencv_photo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ttz/git/opencv-4.3.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library ../../lib/libopencv_photo.so"

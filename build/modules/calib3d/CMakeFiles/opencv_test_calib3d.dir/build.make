@@ -874,6 +874,8 @@ bin/opencv_test_calib3d: lib/libopencv_ts.a
 bin/opencv_test_calib3d: lib/libopencv_calib3d.so.4.3.0
 bin/opencv_test_calib3d: lib/libopencv_highgui.so.4.3.0
 bin/opencv_test_calib3d: lib/libopencv_features2d.so.4.3.0
+bin/opencv_test_calib3d: 3rdparty/lib/libippiw.a
+bin/opencv_test_calib3d: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_test_calib3d: lib/libopencv_videoio.so.4.3.0
 bin/opencv_test_calib3d: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_test_calib3d: lib/libopencv_flann.so.4.3.0

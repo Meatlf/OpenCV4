@@ -220,6 +220,8 @@ bin/opencv_interactive-calibration: apps/interactive-calibration/CMakeFiles/open
 bin/opencv_interactive-calibration: apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/parametersController.cpp.o
 bin/opencv_interactive-calibration: apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/rotationConverters.cpp.o
 bin/opencv_interactive-calibration: apps/interactive-calibration/CMakeFiles/opencv_interactive-calibration.dir/build.make
+bin/opencv_interactive-calibration: 3rdparty/lib/libippiw.a
+bin/opencv_interactive-calibration: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_interactive-calibration: lib/libopencv_highgui.so.4.3.0
 bin/opencv_interactive-calibration: lib/libopencv_calib3d.so.4.3.0
 bin/opencv_interactive-calibration: lib/libopencv_videoio.so.4.3.0

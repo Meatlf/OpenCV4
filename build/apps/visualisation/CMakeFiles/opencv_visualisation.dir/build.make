@@ -90,6 +90,8 @@ opencv_visualisation_EXTERNAL_OBJECTS =
 
 bin/opencv_visualisation: apps/visualisation/CMakeFiles/opencv_visualisation.dir/opencv_visualisation.cpp.o
 bin/opencv_visualisation: apps/visualisation/CMakeFiles/opencv_visualisation.dir/build.make
+bin/opencv_visualisation: 3rdparty/lib/libippiw.a
+bin/opencv_visualisation: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_visualisation: lib/libopencv_highgui.so.4.3.0
 bin/opencv_visualisation: lib/libopencv_videoio.so.4.3.0
 bin/opencv_visualisation: lib/libopencv_imgcodecs.so.4.3.0

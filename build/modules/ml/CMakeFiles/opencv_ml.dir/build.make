@@ -455,6 +455,8 @@ lib/libopencv_ml.so.4.3.0: modules/ml/CMakeFiles/opencv_ml.dir/src/testset.cpp.o
 lib/libopencv_ml.so.4.3.0: modules/ml/CMakeFiles/opencv_ml.dir/src/tree.cpp.o
 lib/libopencv_ml.so.4.3.0: modules/ml/CMakeFiles/opencv_ml.dir/build.make
 lib/libopencv_ml.so.4.3.0: lib/libopencv_core.so.4.3.0
+lib/libopencv_ml.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_ml.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_ml.so.4.3.0: modules/ml/CMakeFiles/opencv_ml.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ttz/git/opencv-4.3.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX shared library ../../lib/libopencv_ml.so"
 	cd /home/ttz/git/opencv-4.3.0/build/modules/ml && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_ml.dir/link.txt --verbose=$(VERBOSE)

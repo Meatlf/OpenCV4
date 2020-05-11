@@ -876,6 +876,8 @@ lib/libopencv_calib3d.so.4.3.0: modules/calib3d/CMakeFiles/opencv_calib3d.dir/op
 lib/libopencv_calib3d.so.4.3.0: modules/calib3d/CMakeFiles/opencv_calib3d.dir/undistort.avx2.cpp.o
 lib/libopencv_calib3d.so.4.3.0: modules/calib3d/CMakeFiles/opencv_calib3d.dir/build.make
 lib/libopencv_calib3d.so.4.3.0: lib/libopencv_features2d.so.4.3.0
+lib/libopencv_calib3d.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_calib3d.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_calib3d.so.4.3.0: lib/libopencv_flann.so.4.3.0
 lib/libopencv_calib3d.so.4.3.0: lib/libopencv_imgproc.so.4.3.0
 lib/libopencv_calib3d.so.4.3.0: lib/libopencv_core.so.4.3.0

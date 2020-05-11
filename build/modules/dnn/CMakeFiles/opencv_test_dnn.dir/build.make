@@ -483,6 +483,8 @@ bin/opencv_test_dnn: modules/dnn/CMakeFiles/opencv_test_dnn.dir/build.make
 bin/opencv_test_dnn: lib/libopencv_ts.a
 bin/opencv_test_dnn: lib/libopencv_dnn.so.4.3.0
 bin/opencv_test_dnn: lib/libopencv_highgui.so.4.3.0
+bin/opencv_test_dnn: 3rdparty/lib/libippiw.a
+bin/opencv_test_dnn: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_test_dnn: lib/libopencv_videoio.so.4.3.0
 bin/opencv_test_dnn: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_test_dnn: lib/libopencv_imgproc.so.4.3.0

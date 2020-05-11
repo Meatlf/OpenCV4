@@ -20,6 +20,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "3rdparty/ippicv/ippicv_lnx/icv/include"
+  "3rdparty/ippicv/ippicv_lnx/iw/include"
   "."
   "../modules/flann/include"
   "modules/flann"
@@ -37,6 +39,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/ttz/git/opencv-4.3.0/build/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
+  "/home/ttz/git/opencv-4.3.0/build/3rdparty/ippiw/CMakeFiles/ippiw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -171,6 +171,8 @@ bin/opencv_perf_photo: modules/photo/CMakeFiles/opencv_perf_photo.dir/build.make
 bin/opencv_perf_photo: lib/libopencv_ts.a
 bin/opencv_perf_photo: lib/libopencv_photo.so.4.3.0
 bin/opencv_perf_photo: lib/libopencv_highgui.so.4.3.0
+bin/opencv_perf_photo: 3rdparty/lib/libippiw.a
+bin/opencv_perf_photo: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_perf_photo: lib/libopencv_videoio.so.4.3.0
 bin/opencv_perf_photo: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_perf_photo: lib/libopencv_imgproc.so.4.3.0

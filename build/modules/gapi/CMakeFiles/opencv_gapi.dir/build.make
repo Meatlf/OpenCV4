@@ -1599,6 +1599,8 @@ lib/libopencv_gapi.so.4.3.0: modules/gapi/CMakeFiles/opencv_gapi.dir/backends/fl
 lib/libopencv_gapi.so.4.3.0: modules/gapi/CMakeFiles/opencv_gapi.dir/backends/fluid/gfluidimgproc_func.avx2.cpp.o
 lib/libopencv_gapi.so.4.3.0: modules/gapi/CMakeFiles/opencv_gapi.dir/build.make
 lib/libopencv_gapi.so.4.3.0: lib/libopencv_imgproc.so.4.3.0
+lib/libopencv_gapi.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_gapi.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_gapi.so.4.3.0: lib/libade.a
 lib/libopencv_gapi.so.4.3.0: /usr/lib/x86_64-linux-gnu/libtbb.so
 lib/libopencv_gapi.so.4.3.0: lib/libopencv_core.so.4.3.0

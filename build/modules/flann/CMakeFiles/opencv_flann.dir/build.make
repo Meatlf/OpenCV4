@@ -117,6 +117,8 @@ lib/libopencv_flann.so.4.3.0: modules/flann/CMakeFiles/opencv_flann.dir/src/flan
 lib/libopencv_flann.so.4.3.0: modules/flann/CMakeFiles/opencv_flann.dir/src/miniflann.cpp.o
 lib/libopencv_flann.so.4.3.0: modules/flann/CMakeFiles/opencv_flann.dir/build.make
 lib/libopencv_flann.so.4.3.0: lib/libopencv_core.so.4.3.0
+lib/libopencv_flann.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_flann.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_flann.so.4.3.0: modules/flann/CMakeFiles/opencv_flann.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ttz/git/opencv-4.3.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../lib/libopencv_flann.so"
 	cd /home/ttz/git/opencv-4.3.0/build/modules/flann && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/opencv_flann.dir/link.txt --verbose=$(VERBOSE)

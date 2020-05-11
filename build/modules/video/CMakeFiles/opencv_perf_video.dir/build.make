@@ -406,6 +406,8 @@ bin/opencv_perf_video: lib/libopencv_ts.a
 bin/opencv_perf_video: lib/libopencv_video.so.4.3.0
 bin/opencv_perf_video: lib/libopencv_highgui.so.4.3.0
 bin/opencv_perf_video: lib/libopencv_calib3d.so.4.3.0
+bin/opencv_perf_video: 3rdparty/lib/libippiw.a
+bin/opencv_perf_video: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_perf_video: lib/libopencv_videoio.so.4.3.0
 bin/opencv_perf_video: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_perf_video: lib/libopencv_features2d.so.4.3.0

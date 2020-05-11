@@ -104,7 +104,7 @@ CMAKE_AUTOMOC_MACRO_NAMES=Q_OBJECT;Q_GADGET;Q_NAMESPACE
 CMAKE_BASE_NAME=gcc
 CMAKE_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build
 CMAKE_BUILD_TOOL=/usr/bin/make
-CMAKE_BUILD_TYPE=RELEASE
+CMAKE_BUILD_TYPE=Debug
 CMAKE_C11_COMPILE_FEATURES=c_std_11;c_static_assert
 CMAKE_C11_EXTENSION_COMPILE_OPTION=-std=gnu11
 CMAKE_C11_STANDARD_COMPILE_OPTION=-std=c11
@@ -313,7 +313,7 @@ CMAKE_EXE_LINK_DYNAMIC_CXX_FLAGS=-Wl,-Bdynamic
 CMAKE_EXE_LINK_DYNAMIC_C_FLAGS=-Wl,-Bdynamic
 CMAKE_EXE_LINK_STATIC_CXX_FLAGS=-Wl,-Bstatic
 CMAKE_EXE_LINK_STATIC_C_FLAGS=-Wl,-Bstatic
-CMAKE_EXPORT_COMPILE_COMMANDS=OFF
+CMAKE_EXPORT_COMPILE_COMMANDS=TRUE
 CMAKE_EXTRA_GENERATOR=
 CMAKE_FILES_DIRECTORY=/CMakeFiles
 CMAKE_FIND_LIBRARY_PREFIXES=lib
@@ -406,7 +406,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE_INIT=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO_INIT=
 CMAKE_NM=/usr/bin/nm
-CMAKE_NUMBER_OF_MAKEFILES=57
+CMAKE_NUMBER_OF_MAKEFILES=58
 CMAKE_OBJCOPY=/usr/bin/objcopy
 CMAKE_OBJDUMP=/usr/bin/objdump
 CMAKE_PARENT_LIST_FILE=/home/ttz/git/opencv-4.3.0/CMakeLists.txt
@@ -440,8 +440,8 @@ CMAKE_SHARED_LIBRARY_RUNTIME_C_FLAG_SEP=:
 CMAKE_SHARED_LIBRARY_SONAME_CXX_FLAG=-Wl,-soname,
 CMAKE_SHARED_LIBRARY_SONAME_C_FLAG=-Wl,-soname,
 CMAKE_SHARED_LIBRARY_SUFFIX=.so
-CMAKE_SHARED_LINKER_FLAGS=  -Wl,--gc-sections -Wl,--as-needed
-CMAKE_SHARED_LINKER_FLAGS=  -Wl,--gc-sections -Wl,--as-needed
+CMAKE_SHARED_LINKER_FLAGS=-Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a   -Wl,--gc-sections -Wl,--as-needed
+CMAKE_SHARED_LINKER_FLAGS=-Wl,--exclude-libs,libippicv.a -Wl,--exclude-libs,libippiw.a   -Wl,--gc-sections -Wl,--as-needed
 CMAKE_SHARED_LINKER_FLAGS_DEBUG= 
 CMAKE_SHARED_LINKER_FLAGS_DEBUG= 
 CMAKE_SHARED_LINKER_FLAGS_DEBUG_INIT=
@@ -494,7 +494,7 @@ CMAKE_SYSTEM_SPECIFIC_INITIALIZE_LOADED=1
 CMAKE_SYSTEM_VERSION=5.3.0-51-generic
 CMAKE_TESTING_ENABLED=1
 CMAKE_THREAD_LIBS_INIT=
-CMAKE_TRY_COMPILE_CONFIGURATION=RELEASE
+CMAKE_TRY_COMPILE_CONFIGURATION=Debug
 CMAKE_TWEAK_VERSION=0
 CMAKE_UNAME=/bin/uname
 CMAKE_USE_PTHREADS_INIT=1
@@ -580,11 +580,11 @@ CPACK_INSTALLED_DIRECTORIES=/home/ttz/git/opencv-4.3.0;/
 CPACK_INSTALL_CMAKE_PROJECTS=
 CPACK_INSTALL_PREFIX=/usr/local/opencv430
 CPACK_MODULE_PATH=
-CPACK_NSIS_DISPLAY_NAME=OpenCV 00608de-dirty
+CPACK_NSIS_DISPLAY_NAME=OpenCV 9854aff-dirty
 CPACK_NSIS_INSTALLER_ICON_CODE=
 CPACK_NSIS_INSTALLER_MUI_ICON_CODE=
 CPACK_NSIS_INSTALL_ROOT=$PROGRAMFILES
-CPACK_NSIS_PACKAGE_NAME=OpenCV 00608de-dirty
+CPACK_NSIS_PACKAGE_NAME=OpenCV 9854aff-dirty
 CPACK_OUTPUT_CONFIG_FILE=/home/ttz/git/opencv-4.3.0/build/CPackConfig.cmake
 CPACK_PACKAGE_CONTACT=admin@opencv.org
 CPACK_PACKAGE_DEFAULT_LOCATION=/
@@ -595,13 +595,13 @@ machine perception in the commercial products. Being a BSD-licensed product,
 OpenCV makes it easy for businesses to utilize and modify the code.
 CPACK_PACKAGE_DESCRIPTION_FILE=/usr/share/cmake-3.10/Templates/CPack.GenericDescription.txt
 CPACK_PACKAGE_DESCRIPTION_SUMMARY=Open Computer Vision Library
-CPACK_PACKAGE_FILE_NAME=OpenCV-00608de-dirty-x86_64
-CPACK_PACKAGE_INSTALL_DIRECTORY=OpenCV 00608de-dirty
-CPACK_PACKAGE_INSTALL_REGISTRY_KEY=OpenCV 00608de-dirty
+CPACK_PACKAGE_FILE_NAME=OpenCV-9854aff-dirty-x86_64
+CPACK_PACKAGE_INSTALL_DIRECTORY=OpenCV 9854aff-dirty
+CPACK_PACKAGE_INSTALL_REGISTRY_KEY=OpenCV 9854aff-dirty
 CPACK_PACKAGE_NAME=OpenCV
 CPACK_PACKAGE_RELOCATABLE=true
 CPACK_PACKAGE_VENDOR=OpenCV Foundation
-CPACK_PACKAGE_VERSION=00608de-dirty
+CPACK_PACKAGE_VERSION=9854aff-dirty
 CPACK_PACKAGE_VERSION_MAJOR=4
 CPACK_PACKAGE_VERSION_MINOR=3
 CPACK_PACKAGE_VERSION_PATCH=0
@@ -626,7 +626,7 @@ CPACK_SOURCE_GENERATOR=TBZ2;TGZ;TXZ;TZ
 CPACK_SOURCE_IGNORE_FILES=/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#
 CPACK_SOURCE_INSTALLED_DIRECTORIES=/home/ttz/git/opencv-4.3.0;/
 CPACK_SOURCE_OUTPUT_CONFIG_FILE=/home/ttz/git/opencv-4.3.0/build/CPackSourceConfig.cmake
-CPACK_SOURCE_PACKAGE_FILE_NAME=OpenCV-00608de-dirty-x86_64
+CPACK_SOURCE_PACKAGE_FILE_NAME=OpenCV-9854aff-dirty-x86_64
 CPACK_SOURCE_RPM=OFF
 CPACK_SOURCE_TBZ2=ON
 CPACK_SOURCE_TGZ=ON
@@ -953,6 +953,7 @@ FFMPEG_libswscale_INCLUDEDIR=/usr/include/x86_64-linux-gnu
 FFMPEG_libswscale_LIBDIR=/usr/lib/x86_64-linux-gnu
 FFMPEG_libswscale_PREFIX=/usr
 FFMPEG_libswscale_VERSION=4.8.100
+FILE=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/iw/include/iw/iw_ll.h
 FIND_PACKAGE_MESSAGE_DETAILS_JPEG=[/usr/lib/x86_64-linux-gnu/libjpeg.so][/usr/include][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_PNG=[/usr/lib/x86_64-linux-gnu/libpng.so][/usr/include][v1.6.34()]
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp=[/home/ttz/anaconda3/bin/python3][v3.7.4(3.2)]
@@ -1287,6 +1288,10 @@ HAVE_IMGCODEC_HDR=ON
 HAVE_IMGCODEC_PFM=ON
 HAVE_IMGCODEC_PXM=ON
 HAVE_IMGCODEC_SUNRASTER=ON
+HAVE_IPP=1
+HAVE_IPP_ICV=1
+HAVE_IPP_IW=1
+HAVE_IPP_IW_LL=1
 HAVE_ITT=1
 HAVE_JPEG=YES
 HAVE_LIBPNG_PNG_H=1
@@ -1347,17 +1352,44 @@ HELP_OPENCV_DOWNLOAD_PATH=Cache directory for downloaded files
 HIGHGUI_INCLUDE_DIRS=/usr/include/gtk-2.0;/usr/lib/x86_64-linux-gnu/gtk-2.0/include;/usr/include/gio-unix-2.0/;/usr/include/cairo;/usr/include/pango-1.0;/usr/include/atk-1.0;/usr/include/pixman-1;/usr/include/gdk-pixbuf-2.0;/usr/include/libpng16;/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include/freetype2
 HIGHGUI_LIBRARIES=/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;/usr/lib/x86_64-linux-gnu/libcairo.so;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;/usr/lib/x86_64-linux-gnu/libfontconfig.so;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so
 HIGHGUI_LINK_LIBRARIES=/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;/usr/lib/x86_64-linux-gnu/libcairo.so;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;/usr/lib/x86_64-linux-gnu/libfontconfig.so;/usr/lib/x86_64-linux-gnu/libfreetype.so;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so
-ICV_PACKAGE_ROOT=
+ICV_PACKAGE_ROOT=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx
 INSTALL_CREATE_DISTRIB=OFF
 INSTALL_C_EXAMPLES=OFF
 INSTALL_PYTHON_EXAMPLES=OFF
 INSTALL_TESTS=OFF
 INSTALL_TO_MANGLED_PATHS=OFF
+IPPIW_ROOT=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv/../iw
+IPPROOT=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv
+IPP_INCLUDE_DIRS=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv/include
+IPP_IW_INCLUDES=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/iw/include
+IPP_IW_LIBRARIES=ippiw
+IPP_IW_LIBRARY=ippiw
+IPP_IW_LICENSE_FILES=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv/../iw/../support.txt;/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv/../iw/../third-party-programs.txt;/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv/../iw/../EULA.rtf;/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv/../iw/../EULA.txt
+IPP_IW_PATH=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/iw
+IPP_LIBRARIES=ippicv
+IPP_LIBRARY_DIR=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv/lib/intel64
+IPP_LIB_PREFIX=lib
+IPP_LIB_SUFFIX=.a
+IPP_PREFIX=ipp
+IPP_ROOT_DIR=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/icv
+IPP_SUFFIX=
+IPP_VERSION_BUILD=0
+IPP_VERSION_EXP=20200000
+IPP_VERSION_MAJOR=2020
+IPP_VERSION_MINOR=0
+IPP_VERSION_STR=2020.0.0 Gold
 IPP_X64=1
 IT=
 ITT_INCLUDE_DIR=/home/ttz/git/opencv-4.3.0/3rdparty/ittnotify/include
 ITT_INCLUDE_DIRS=/home/ttz/git/opencv-4.3.0/3rdparty/ittnotify/include
 ITT_LIBRARIES=ittnotify
+IW_MIN_COMPATIBLE_IPP_EXP=20170000
+IW_MIN_COMPATIBLE_IPP_MAJOR=2017
+IW_MIN_COMPATIBLE_IPP_MINOR=0
+IW_MIN_COMPATIBLE_IPP_UPDATE=0
+IW_VERSION_MAJOR=2020
+IW_VERSION_MINOR=0
+IW_VERSION_UPDATE=0
 JAVA_AWT_INCLUDE_DIRECTORIES=[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit\1.4;JavaHome]/include;[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit\1.3;JavaHome]/include;[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit\registry;JavaHome]/include;/usr/include;/usr/local/include
 JAVA_AWT_INCLUDE_PATH=JAVA_AWT_INCLUDE_PATH-NOTFOUND
 JAVA_AWT_LIBRARY=/usr/lib/jvm/default-java/lib/libjawt.so
@@ -1415,6 +1447,7 @@ NATIVE_JPEG_INCLUDE_PATH=/usr/include
 NATIVE_JPEG_LIB_PATH=/usr/lib/x86_64-linux-gnu
 OCV_COMPILER_FAIL_REGEX=argument .* is not valid;command[- ]line option .* is valid for .* but not for C\+\+;command[- ]line option .* is valid for .* but not for C;unrecognized .*option;unknown .*option;ignoring unknown option;warning D9002;option .*not supported;[Uu]nknown option;[Ww]arning: [Oo]ption;command option .* is not recognized;not supported in this configuration, ignored;File with unknown suffix passed to linker;WARNING: unknown flag:
 OCV_DOWNLOAD_ADE_HASH_3rdparty_ade_v0_1_1f_zip=b624b995ec9c439cbc2e9e6ee940d3a2
+OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2020_lnx_intel64_20191018_general_tgz=7421de0095c7a39162ae13a6098782f9
 OPENCL_FOUND=ON
 OPENCL_INCLUDE_DIR=/home/ttz/git/opencv-4.3.0/3rdparty/include/opencl/1.2
 OPENCL_INCLUDE_DIRS=/home/ttz/git/opencv-4.3.0/3rdparty/include/opencl/1.2
@@ -1989,7 +2022,7 @@ OPENCV_LIB_INSTALL_PATH=lib
 OPENCV_LIB_RUNTIME_DIR_RELATIVE_CMAKECONFIG=../lib
 OPENCV_LICENSES_INSTALL_PATH=share/licenses/opencv4
 OPENCV_LICENSE_FILE=/home/ttz/git/opencv-4.3.0/LICENSE
-OPENCV_LINKER_LIBS=dl;m;pthread;rt;Eigen3::Eigen
+OPENCV_LINKER_LIBS=dl;m;pthread;rt;ippiw;ippicv;Eigen3::Eigen
 OPENCV_MATHJAX_RELPATH=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0
 OPENCV_MODULES_BUILD=opencv_core;opencv_flann;opencv_imgproc;opencv_java_bindings_generator;opencv_ml;opencv_photo;opencv_python_tests;opencv_dnn;opencv_features2d;opencv_gapi;opencv_imgcodecs;opencv_videoio;opencv_calib3d;opencv_highgui;opencv_objdetect;opencv_stitching;opencv_ts;opencv_video;opencv_python_bindings_generator
 OPENCV_MODULES_BUILD_ST=calib3d;core;dnn;features2d;flann;gapi;highgui;imgcodecs;imgproc;ml;objdetect;photo;stitching;ts;video;videoio
@@ -2393,7 +2426,7 @@ OPENCV_TEST_DATA_INSTALL_PATH=share/opencv4/testdata
 OPENCV_TEST_INSTALL_PATH=bin
 OPENCV_TIMESTAMP=2020-05-10T14:20:27Z
 OPENCV_TRACE=1
-OPENCV_VCSVERSION=00608de-dirty
+OPENCV_VCSVERSION=9854aff-dirty
 OPENCV_VERIFICATIONS=WITH_1394;WITH_AVFOUNDATION;WITH_CAP_IOS;WITH_CPUFEATURES;WITH_VTK;WITH_CUDA;WITH_CUFFT;WITH_CUBLAS;WITH_CUDNN;WITH_NVCUVID;WITH_EIGEN;WITH_FFMPEG;WITH_GSTREAMER;WITH_GTK;WITH_GTK_2_X;WITH_IPP;WITH_HALIDE;WITH_VULKAN;WITH_INF_ENGINE;WITH_NGRAPH;WITH_JASPER;WITH_OPENJPEG;WITH_JPEG;WITH_WEBP;WITH_OPENEXR;WITH_OPENGL;WITH_OPENVX;WITH_OPENNI;WITH_OPENNI2;WITH_PNG;WITH_GDCM;WITH_PVAPI;WITH_ARAVIS;WITH_QT;WITH_WIN32UI;WITH_TBB;WITH_HPX;WITH_OPENMP;WITH_PTHREADS_PF;WITH_TIFF;WITH_V4L;WITH_DSHOW;WITH_MSMF;WITH_MSMF_DXVA;WITH_XIMEA;WITH_XINE;WITH_CLP;WITH_OPENCL;WITH_OPENCL_SVM;WITH_OPENCLAMDFFT;WITH_OPENCLAMDBLAS;WITH_DIRECTX;WITH_OPENCL_D3D11_NV;WITH_LIBREALSENSE;WITH_VA;WITH_VA_INTEL;WITH_MFX;WITH_GDAL;WITH_GPHOTO2;WITH_LAPACK;WITH_ITT;WITH_PROTOBUF;WITH_IMGCODEC_HDR;WITH_IMGCODEC_SUNRASTER;WITH_IMGCODEC_PXM;WITH_IMGCODEC_PFM;WITH_QUIRC;WITH_ANDROID_MEDIANDK;WITH_TENGINE
 OPENCV_VERIFY_WITH_1394=HAVE_DC1394_2
 OPENCV_VERIFY_WITH_ANDROID_MEDIANDK=HAVE_ANDROID_MEDIANDK
@@ -2508,14 +2541,14 @@ OPT=
 OPT2=
 OUTPUT=Change Dir: /home/ttz/git/opencv-4.3.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c4dd7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c4dd7.dir/build.make CMakeFiles/cmTC_c4dd7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_475ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_475ae.dir/build.make CMakeFiles/cmTC_475ae.dir/build
 make[1]: Entering directory '/home/ttz/git/opencv-4.3.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c4dd7.dir/vtk_test.cpp.o
-/usr/bin/g++-7   -I/usr/include/vtk-7.1 -I/usr/include/x86_64-linux-gnu -I/usr/include/freetype2  -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -std=c++11 -o CMakeFiles/cmTC_c4dd7.dir/vtk_test.cpp.o -c /home/ttz/git/opencv-4.3.0/cmake/checks/vtk_test.cpp
-Linking CXX executable cmTC_c4dd7
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4dd7.dir/link.txt --verbose=1
-/usr/bin/g++-7     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_c4dd7.dir/vtk_test.cpp.o  -o cmTC_c4dd7 /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libtiff.so /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersTexture-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib/x86_64-linux-gnu/libvtkIOExport-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingGL2PSOpenGL2-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libgl2ps.so /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libGLEW.so /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so /usr/lib/x86_64-linux-gnu/libXt.so /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1.1 -ldl 
+Building CXX object CMakeFiles/cmTC_475ae.dir/vtk_test.cpp.o
+/usr/bin/g++-7   -I/usr/include/vtk-7.1 -I/usr/include/x86_64-linux-gnu -I/usr/include/freetype2  -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG -fPIE   -std=c++11 -o CMakeFiles/cmTC_475ae.dir/vtk_test.cpp.o -c /home/ttz/git/opencv-4.3.0/cmake/checks/vtk_test.cpp
+Linking CXX executable cmTC_475ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_475ae.dir/link.txt --verbose=1
+/usr/bin/g++-7     -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG    -Wl,--gc-sections -Wl,--as-needed  CMakeFiles/cmTC_475ae.dir/vtk_test.cpp.o  -o cmTC_475ae /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libjpeg.so /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libtiff.so /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersStatistics-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkImagingFourier-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkalglib-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOPLY-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersTexture-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libfreetype.so /usr/lib/x86_64-linux-gnu/libvtkIOExport-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingGL2PSOpenGL2-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libgl2ps.so /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOImage-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkDICOMParser-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkmetaio-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libvtkImagingCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libGLEW.so /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so /usr/lib/x86_64-linux-gnu/libXt.so /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkIOCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonMath-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonSystem-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1.1 /usr/lib/x86_64-linux-gnu/libvtksys-7.1.so.7.1.1 -ldl 
 make[1]: Leaving directory '/home/ttz/git/opencv-4.3.0/build/CMakeFiles/CMakeTmp'
 
 OpenBLAS=
@@ -2618,6 +2651,10 @@ SEARCH_PATHS=;/usr;/usr/local;/sw;/opt;/OpenEXR
 SELF_DIR=/usr/lib/x86_64-linux-gnu/openjpeg-2.3
 STD_OPENCV_DEV=libopencv-dev;libopencv-calib3d-dev;libopencv-core-dev;libopencv-dnn-dev;libopencv-features2d-dev;libopencv-flann-dev;libopencv-gapi-dev;libopencv-highgui-dev;libopencv-imgcodecs-dev;libopencv-imgproc-dev;libopencv-ml-dev;libopencv-objdetect-dev;libopencv-photo-dev;libopencv-stitching-dev;libopencv-ts-dev;libopencv-video-dev;libopencv-videoio-dev
 STD_OPENCV_LIBS=opencv-data;libopencv-calib3d4.0;libopencv-core4.0;libopencv-dnn4.0;libopencv-features2d4.0;libopencv-flann4.0;libopencv-gapi4.0;libopencv-highgui4.0;libopencv-imgcodecs4.0;libopencv-imgproc4.0;libopencv-ml4.0;libopencv-objdetect4.0;libopencv-photo4.0;libopencv-stitching4.0;libopencv-ts4.0;libopencv-video4.0;libopencv-videoio4.0
+STR1=#define IPP_VERSION_MAJOR  2020
+STR2=#define IPP_VERSION_MINOR  0
+STR3=#define IPP_VERSION_UPDATE 0
+STR4=#define IPP_VERSION_STR "2020.0.0 Gold"
 TBB_DIR=TBB_DIR-NOTFOUND
 TBB_ENV_INCLUDE=/usr/include
 TBB_ENV_LIB=/usr/lib/x86_64-linux-gnu/libtbb.so
@@ -2643,19 +2680,19 @@ TIFF_VERSION_LINES=#define TIFF_VERSION_CLASSIC 42;#define TIFF_VERSION_BIG 43
 TIFF_VERSION_STRING=4.0.9
 TRY_OUT=Change Dir: /home/ttz/git/opencv-4.3.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6ef1e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6ef1e.dir/build.make CMakeFiles/cmTC_6ef1e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_33b25/fast"
+/usr/bin/make -f CMakeFiles/cmTC_33b25.dir/build.make CMakeFiles/cmTC_33b25.dir/build
 make[1]: Entering directory '/home/ttz/git/opencv-4.3.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6ef1e.dir/opencl.cpp.o
-/usr/bin/g++-7   -I/home/ttz/git/opencv-4.3.0/3rdparty/include/opencl/1.2  -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG  -DNDEBUG -fPIE   -std=c++11 -o CMakeFiles/cmTC_6ef1e.dir/opencl.cpp.o -c /home/ttz/git/opencv-4.3.0/cmake/checks/opencl.cpp
+Building CXX object CMakeFiles/cmTC_33b25.dir/opencl.cpp.o
+/usr/bin/g++-7   -I/home/ttz/git/opencv-4.3.0/3rdparty/include/opencl/1.2  -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Winit-self -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -Wno-long-long -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -g  -O0 -DDEBUG -D_DEBUG -fPIE   -std=c++11 -o CMakeFiles/cmTC_33b25.dir/opencl.cpp.o -c /home/ttz/git/opencv-4.3.0/cmake/checks/opencl.cpp
 /home/ttz/git/opencv-4.3.0/cmake/checks/opencl.cpp:6:2: error: #error OpenCL is valid
  #error OpenCL is valid
   ^~~~~
-CMakeFiles/cmTC_6ef1e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6ef1e.dir/opencl.cpp.o' failed
-make[1]: *** [CMakeFiles/cmTC_6ef1e.dir/opencl.cpp.o] Error 1
+CMakeFiles/cmTC_33b25.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_33b25.dir/opencl.cpp.o' failed
+make[1]: *** [CMakeFiles/cmTC_33b25.dir/opencl.cpp.o] Error 1
 make[1]: Leaving directory '/home/ttz/git/opencv-4.3.0/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_6ef1e/fast' failed
-make: *** [cmTC_6ef1e/fast] Error 2
+Makefile:126: recipe for target 'cmTC_33b25/fast' failed
+make: *** [cmTC_33b25/fast] Error 2
 
 Threads_FOUND=TRUE
 UNIX=1
@@ -2793,6 +2830,7 @@ ZLIB_VERSION_PATCH=11
 ZLIB_VERSION_STRING=1.2.11
 ZLIB_VERSION_TWEAK=
 _BLAS_LIBRARIES=/usr/lib/x86_64-linux-gnu/libblas.so
+_BUILD=0
 _CMAKE_CXX_IPO_MAY_BE_SUPPORTED_BY_COMPILER=YES
 _CMAKE_CXX_IPO_SUPPORTED_BY_CMAKE=YES
 _CMAKE_C_IPO_MAY_BE_SUPPORTED_BY_COMPILER=YES
@@ -2879,11 +2917,11 @@ SET(CPACK_INSTALLED_DIRECTORIES "/home/ttz/git/opencv-4.3.0;/")
 SET(CPACK_INSTALL_CMAKE_PROJECTS "")
 SET(CPACK_INSTALL_PREFIX "/usr/local/opencv430")
 SET(CPACK_MODULE_PATH "")
-SET(CPACK_NSIS_DISPLAY_NAME "OpenCV 00608de-dirty")
+SET(CPACK_NSIS_DISPLAY_NAME "OpenCV 9854aff-dirty")
 SET(CPACK_NSIS_INSTALLER_ICON_CODE "")
 SET(CPACK_NSIS_INSTALLER_MUI_ICON_CODE "")
 SET(CPACK_NSIS_INSTALL_ROOT "$PROGRAMFILES")
-SET(CPACK_NSIS_PACKAGE_NAME "OpenCV 00608de-dirty")
+SET(CPACK_NSIS_PACKAGE_NAME "OpenCV 9854aff-dirty")
 SET(CPACK_OUTPUT_CONFIG_FILE "/home/ttz/git/opencv-4.3.0/build/CPackConfig.cmake")
 SET(CPACK_PACKAGE_CONTACT "admin@opencv.org")
 SET(CPACK_PACKAGE_DEFAULT_LOCATION "/")
@@ -2894,13 +2932,13 @@ machine perception in the commercial products. Being a BSD-licensed product,
 OpenCV makes it easy for businesses to utilize and modify the code.")
 SET(CPACK_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake-3.10/Templates/CPack.GenericDescription.txt")
 SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Open Computer Vision Library")
-SET(CPACK_PACKAGE_FILE_NAME "OpenCV-00608de-dirty-x86_64")
-SET(CPACK_PACKAGE_INSTALL_DIRECTORY "OpenCV 00608de-dirty")
-SET(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "OpenCV 00608de-dirty")
+SET(CPACK_PACKAGE_FILE_NAME "OpenCV-9854aff-dirty-x86_64")
+SET(CPACK_PACKAGE_INSTALL_DIRECTORY "OpenCV 9854aff-dirty")
+SET(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "OpenCV 9854aff-dirty")
 SET(CPACK_PACKAGE_NAME "OpenCV")
 SET(CPACK_PACKAGE_RELOCATABLE "true")
 SET(CPACK_PACKAGE_VENDOR "OpenCV Foundation")
-SET(CPACK_PACKAGE_VERSION "00608de-dirty")
+SET(CPACK_PACKAGE_VERSION "9854aff-dirty")
 SET(CPACK_PACKAGE_VERSION_MAJOR "4")
 SET(CPACK_PACKAGE_VERSION_MINOR "3")
 SET(CPACK_PACKAGE_VERSION_PATCH "0")
@@ -2925,7 +2963,7 @@ SET(CPACK_SOURCE_GENERATOR "TBZ2;TGZ;TXZ;TZ")
 SET(CPACK_SOURCE_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
 SET(CPACK_SOURCE_INSTALLED_DIRECTORIES "/home/ttz/git/opencv-4.3.0;/")
 SET(CPACK_SOURCE_OUTPUT_CONFIG_FILE "/home/ttz/git/opencv-4.3.0/build/CPackSourceConfig.cmake")
-SET(CPACK_SOURCE_PACKAGE_FILE_NAME "OpenCV-00608de-dirty-x86_64")
+SET(CPACK_SOURCE_PACKAGE_FILE_NAME "OpenCV-9854aff-dirty-x86_64")
 SET(CPACK_SOURCE_RPM "OFF")
 SET(CPACK_SOURCE_TBZ2 "ON")
 SET(CPACK_SOURCE_TGZ "ON")
@@ -2945,9 +2983,12 @@ _INCLUDED_SYSTEM_INFO_FILE=/usr/share/cmake-3.10/Modules/Platform/Linux.cmake
 _IN_TC=0
 _JAVA_HOME=
 _LIBRARIES=LAPACK_LIBRARIES
+_MAJOR=2020
+_MINOR=0
 _PCH_define_prefix=-D
 _PCH_include_prefix=-I
 _PCH_isystem_prefix=-isystem
+_VERSION_STR=2020.0.0 Gold
 _VTK_MISSING=
 _ZLIB_SEARCHES=_ZLIB_SEARCH_NORMAL
 _ZLIB_SEARCH_NORMAL=PATHS;[HKEY_LOCAL_MACHINE\SOFTWARE\GnuWin32\Zlib;InstallPath];/zlib
@@ -3017,6 +3058,9 @@ file=
 flag=
 hal=
 iface=
+ippiw_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippiw
+ippiw_LIB_DEPENDS=
+ippiw_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/build/3rdparty/ippicv/ippicv_lnx/iw
 item=
 ittnotify_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/3rdparty/ittnotify
 ittnotify_LIB_DEPENDS=general;dl;
@@ -3036,64 +3080,64 @@ opencl_features=no extra features
 opencv_annotation_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/apps/annotation
 opencv_annotation_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/apps/annotation
 opencv_calib3d_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/calib3d
-opencv_calib3d_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;dl;general;m;general;pthread;general;rt;
+opencv_calib3d_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_calib3d_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/calib3d
 opencv_core_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/core
-opencv_core_LIB_DEPENDS=general;dl;general;m;general;pthread;general;rt;general;tbb;general;/usr/lib/x86_64-linux-gnu/libz.so;general;ittnotify;
+opencv_core_LIB_DEPENDS=general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;tbb;general;/usr/lib/x86_64-linux-gnu/libz.so;general;ittnotify;
 opencv_core_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/core
 opencv_dnn_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/dnn
-opencv_dnn_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;libprotobuf;
+opencv_dnn_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;libprotobuf;
 opencv_dnn_PERF_CAFFE=OFF
 opencv_dnn_PERF_CLCAFFE=OFF
 opencv_dnn_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/dnn
 opencv_features2d_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/features2d
-opencv_features2d_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;
+opencv_features2d_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_features2d_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/features2d
 opencv_flann_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/flann
-opencv_flann_LIB_DEPENDS=general;opencv_core;general;dl;general;m;general;pthread;general;rt;
+opencv_flann_LIB_DEPENDS=general;opencv_core;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_flann_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/flann
 opencv_gapi_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/gapi
-opencv_gapi_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ade;general;tbb;
+opencv_gapi_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;ade;general;tbb;
 opencv_gapi_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/gapi
 opencv_highgui_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/highgui
-opencv_highgui_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;dl;general;m;general;pthread;general;rt;general;/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;general;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;general;/usr/lib/x86_64-linux-gnu/libcairo.so;general;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;general;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;general;/usr/lib/x86_64-linux-gnu/libfontconfig.so;general;/usr/lib/x86_64-linux-gnu/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so;
+opencv_highgui_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;/usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so;general;/usr/lib/x86_64-linux-gnu/libatk-1.0.so;general;/usr/lib/x86_64-linux-gnu/libcairo.so;general;/usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so;general;/usr/lib/x86_64-linux-gnu/libgio-2.0.so;general;/usr/lib/x86_64-linux-gnu/libpangoft2-1.0.so;general;/usr/lib/x86_64-linux-gnu/libpango-1.0.so;general;/usr/lib/x86_64-linux-gnu/libgobject-2.0.so;general;/usr/lib/x86_64-linux-gnu/libglib-2.0.so;general;/usr/lib/x86_64-linux-gnu/libfontconfig.so;general;/usr/lib/x86_64-linux-gnu/libfreetype.so;general;/usr/lib/x86_64-linux-gnu/libgthread-2.0.so;
 opencv_highgui_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/highgui
 opencv_imgcodecs_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/imgcodecs
-opencv_imgcodecs_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libjpeg.so;general;/usr/lib/x86_64-linux-gnu/libwebp.so;general;/usr/lib/x86_64-linux-gnu/libpng.so;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libtiff.so;general;openjp2;general;/usr/lib/x86_64-linux-gnu/libImath.so;general;/usr/lib/x86_64-linux-gnu/libIlmImf.so;general;/usr/lib/x86_64-linux-gnu/libIex.so;general;/usr/lib/x86_64-linux-gnu/libHalf.so;general;/usr/lib/x86_64-linux-gnu/libIlmThread.so;
+opencv_imgcodecs_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libjpeg.so;general;/usr/lib/x86_64-linux-gnu/libwebp.so;general;/usr/lib/x86_64-linux-gnu/libpng.so;general;/usr/lib/x86_64-linux-gnu/libz.so;general;/usr/lib/x86_64-linux-gnu/libtiff.so;general;openjp2;general;/usr/lib/x86_64-linux-gnu/libImath.so;general;/usr/lib/x86_64-linux-gnu/libIlmImf.so;general;/usr/lib/x86_64-linux-gnu/libIex.so;general;/usr/lib/x86_64-linux-gnu/libHalf.so;general;/usr/lib/x86_64-linux-gnu/libIlmThread.so;
 opencv_imgcodecs_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/imgcodecs
 opencv_imgproc_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/imgproc
-opencv_imgproc_LIB_DEPENDS=general;opencv_core;general;dl;general;m;general;pthread;general;rt;
+opencv_imgproc_LIB_DEPENDS=general;opencv_core;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_imgproc_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/imgproc
 opencv_interactive-calibration_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/apps/interactive-calibration
 opencv_interactive-calibration_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/apps/interactive-calibration
 opencv_java_bindings_generator_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/java_bindings_generator
 opencv_java_bindings_generator_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/java/generator
 opencv_ml_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/ml
-opencv_ml_LIB_DEPENDS=general;opencv_core;general;dl;general;m;general;pthread;general;rt;
+opencv_ml_LIB_DEPENDS=general;opencv_core;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_ml_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/ml
 opencv_objdetect_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/objdetect
-opencv_objdetect_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;quirc;
+opencv_objdetect_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;general;quirc;
 opencv_objdetect_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/objdetect
 opencv_photo_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/photo
-opencv_photo_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;
+opencv_photo_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_photo_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/photo
 opencv_python_bindings_generator_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/python_bindings_generator
 opencv_python_bindings_generator_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/python/bindings
 opencv_python_tests_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/python_tests
 opencv_python_tests_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/python/test
 opencv_stitching_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/stitching
-opencv_stitching_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;
+opencv_stitching_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_stitching_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/stitching
 opencv_ts_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/ts
-opencv_ts_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;dl;general;m;general;pthread;general;rt;
+opencv_ts_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;opencv_highgui;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_ts_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/ts
 opencv_version_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/apps/version
 opencv_version_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/apps/version
 opencv_video_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/video
-opencv_video_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;
+opencv_video_LIB_DEPENDS=general;opencv_core;general;opencv_flann;general;opencv_imgproc;general;opencv_features2d;general;opencv_calib3d;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_video_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/video
 opencv_videoio_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/modules/videoio
-opencv_videoio_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;dl;general;m;general;pthread;general;rt;
+opencv_videoio_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;dl;general;m;general;pthread;general;rt;general;ippiw;general;ippicv;
 opencv_videoio_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/modules/videoio
 opencv_visualisation_BINARY_DIR=/home/ttz/git/opencv-4.3.0/build/apps/visualisation
 opencv_visualisation_SOURCE_DIR=/home/ttz/git/opencv-4.3.0/apps/visualisation

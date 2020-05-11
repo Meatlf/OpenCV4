@@ -274,6 +274,8 @@ bin/opencv_test_videoio: modules/videoio/CMakeFiles/opencv_test_videoio.dir/test
 bin/opencv_test_videoio: modules/videoio/CMakeFiles/opencv_test_videoio.dir/build.make
 bin/opencv_test_videoio: lib/libopencv_ts.a
 bin/opencv_test_videoio: lib/libopencv_highgui.so.4.3.0
+bin/opencv_test_videoio: 3rdparty/lib/libippiw.a
+bin/opencv_test_videoio: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_test_videoio: lib/libopencv_videoio.so.4.3.0
 bin/opencv_test_videoio: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_test_videoio: lib/libopencv_imgproc.so.4.3.0

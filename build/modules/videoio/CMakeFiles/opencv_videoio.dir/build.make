@@ -377,6 +377,8 @@ lib/libopencv_videoio.so.4.3.0: modules/videoio/CMakeFiles/opencv_videoio.dir/sr
 lib/libopencv_videoio.so.4.3.0: modules/videoio/CMakeFiles/opencv_videoio.dir/src/cap_ffmpeg.cpp.o
 lib/libopencv_videoio.so.4.3.0: modules/videoio/CMakeFiles/opencv_videoio.dir/build.make
 lib/libopencv_videoio.so.4.3.0: lib/libopencv_imgcodecs.so.4.3.0
+lib/libopencv_videoio.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_videoio.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_videoio.so.4.3.0: lib/libopencv_imgproc.so.4.3.0
 lib/libopencv_videoio.so.4.3.0: lib/libopencv_core.so.4.3.0
 lib/libopencv_videoio.so.4.3.0: /usr/lib/x86_64-linux-gnu/libdc1394.so

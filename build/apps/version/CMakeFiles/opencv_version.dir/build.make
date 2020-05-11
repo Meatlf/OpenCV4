@@ -90,6 +90,8 @@ opencv_version_EXTERNAL_OBJECTS =
 
 bin/opencv_version: apps/version/CMakeFiles/opencv_version.dir/opencv_version.cpp.o
 bin/opencv_version: apps/version/CMakeFiles/opencv_version.dir/build.make
+bin/opencv_version: 3rdparty/lib/libippiw.a
+bin/opencv_version: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_version: lib/libopencv_core.so.4.3.0
 bin/opencv_version: apps/version/CMakeFiles/opencv_version.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ttz/git/opencv-4.3.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/opencv_version"

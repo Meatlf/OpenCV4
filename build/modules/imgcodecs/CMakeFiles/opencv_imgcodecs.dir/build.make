@@ -611,6 +611,8 @@ lib/libopencv_imgcodecs.so.4.3.0: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.
 lib/libopencv_imgcodecs.so.4.3.0: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/src/exif.cpp.o
 lib/libopencv_imgcodecs.so.4.3.0: modules/imgcodecs/CMakeFiles/opencv_imgcodecs.dir/build.make
 lib/libopencv_imgcodecs.so.4.3.0: lib/libopencv_imgproc.so.4.3.0
+lib/libopencv_imgcodecs.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_imgcodecs.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_imgcodecs.so.4.3.0: /usr/lib/x86_64-linux-gnu/libz.so
 lib/libopencv_imgcodecs.so.4.3.0: /usr/lib/x86_64-linux-gnu/libjpeg.so
 lib/libopencv_imgcodecs.so.4.3.0: /usr/lib/x86_64-linux-gnu/libwebp.so

@@ -409,6 +409,8 @@ lib/libopencv_stitching.so.4.3.0: modules/stitching/CMakeFiles/opencv_stitching.
 lib/libopencv_stitching.so.4.3.0: modules/stitching/CMakeFiles/opencv_stitching.dir/opencl_kernels_stitching.cpp.o
 lib/libopencv_stitching.so.4.3.0: modules/stitching/CMakeFiles/opencv_stitching.dir/build.make
 lib/libopencv_stitching.so.4.3.0: lib/libopencv_calib3d.so.4.3.0
+lib/libopencv_stitching.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_stitching.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_stitching.so.4.3.0: lib/libopencv_features2d.so.4.3.0
 lib/libopencv_stitching.so.4.3.0: lib/libopencv_flann.so.4.3.0
 lib/libopencv_stitching.so.4.3.0: lib/libopencv_imgproc.so.4.3.0

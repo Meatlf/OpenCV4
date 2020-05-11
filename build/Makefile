@@ -242,6 +242,19 @@ opencv_tests/fast:
 .PHONY : opencv_tests/fast
 
 #=============================================================================
+# Target rules for targets named ippiw
+
+# Build rule for target.
+ippiw: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ippiw
+.PHONY : ippiw
+
+# fast build rule for target.
+ippiw/fast:
+	$(MAKE) -f 3rdparty/ippiw/CMakeFiles/ippiw.dir/build.make 3rdparty/ippiw/CMakeFiles/ippiw.dir/build
+.PHONY : ippiw/fast
+
+#=============================================================================
 # Target rules for targets named libprotobuf
 
 # Build rule for target.
@@ -962,6 +975,7 @@ help:
 	@echo "... opencv_tests"
 	@echo "... package"
 	@echo "... package_source"
+	@echo "... ippiw"
 	@echo "... libprotobuf"
 	@echo "... quirc"
 	@echo "... ittnotify"

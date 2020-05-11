@@ -1,5 +1,5 @@
 
-set(CMAKE_BUILD_TYPE "RELEASE")
+set(CMAKE_BUILD_TYPE "Debug")
 
 set(BUILD_SHARED_LIBS "ON")
 

@@ -92,6 +92,8 @@ bin/opencv_perf_imgcodecs: modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.di
 bin/opencv_perf_imgcodecs: modules/imgcodecs/CMakeFiles/opencv_perf_imgcodecs.dir/build.make
 bin/opencv_perf_imgcodecs: lib/libopencv_ts.a
 bin/opencv_perf_imgcodecs: lib/libopencv_highgui.so.4.3.0
+bin/opencv_perf_imgcodecs: 3rdparty/lib/libippiw.a
+bin/opencv_perf_imgcodecs: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_perf_imgcodecs: lib/libopencv_videoio.so.4.3.0
 bin/opencv_perf_imgcodecs: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_perf_imgcodecs: lib/libopencv_imgproc.so.4.3.0

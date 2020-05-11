@@ -31,6 +31,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "3rdparty/ippicv/ippicv_lnx/icv/include"
+  "3rdparty/ippicv/ippicv_lnx/iw/include"
   "."
   "3rdparty/ade/ade-0.1.1f/sources/ade/include"
   )

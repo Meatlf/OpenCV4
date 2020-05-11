@@ -90,6 +90,8 @@ opencv_annotation_EXTERNAL_OBJECTS =
 
 bin/opencv_annotation: apps/annotation/CMakeFiles/opencv_annotation.dir/opencv_annotation.cpp.o
 bin/opencv_annotation: apps/annotation/CMakeFiles/opencv_annotation.dir/build.make
+bin/opencv_annotation: 3rdparty/lib/libippiw.a
+bin/opencv_annotation: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_annotation: lib/libopencv_highgui.so.4.3.0
 bin/opencv_annotation: lib/libopencv_videoio.so.4.3.0
 bin/opencv_annotation: lib/libopencv_imgcodecs.so.4.3.0

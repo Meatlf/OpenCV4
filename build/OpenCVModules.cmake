@@ -142,110 +142,110 @@ set_target_properties(opencv_video PROPERTIES
   INTERFACE_LINK_LIBRARIES "opencv_core;opencv_flann;opencv_imgproc;opencv_features2d;opencv_calib3d"
 )
 
-# Import target "opencv_core" for configuration "RELEASE"
-set_property(TARGET opencv_core APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_core" for configuration "Debug"
+set_property(TARGET opencv_core APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_core PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_core.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_core.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_core.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_core.so.4.3"
   )
 
-# Import target "opencv_flann" for configuration "RELEASE"
-set_property(TARGET opencv_flann APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_flann" for configuration "Debug"
+set_property(TARGET opencv_flann APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_flann PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_flann.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_flann.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_flann.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_flann.so.4.3"
   )
 
-# Import target "opencv_imgproc" for configuration "RELEASE"
-set_property(TARGET opencv_imgproc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_imgproc" for configuration "Debug"
+set_property(TARGET opencv_imgproc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_imgproc PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_imgproc.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_imgproc.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_imgproc.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_imgproc.so.4.3"
   )
 
-# Import target "opencv_ml" for configuration "RELEASE"
-set_property(TARGET opencv_ml APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_ml" for configuration "Debug"
+set_property(TARGET opencv_ml APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_ml PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_ml.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_ml.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_ml.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_ml.so.4.3"
   )
 
-# Import target "opencv_photo" for configuration "RELEASE"
-set_property(TARGET opencv_photo APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_photo" for configuration "Debug"
+set_property(TARGET opencv_photo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_photo PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_photo.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_photo.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_photo.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_photo.so.4.3"
   )
 
-# Import target "opencv_dnn" for configuration "RELEASE"
-set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_dnn" for configuration "Debug"
+set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_dnn PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_dnn.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_dnn.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_dnn.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_dnn.so.4.3"
   )
 
-# Import target "opencv_features2d" for configuration "RELEASE"
-set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_features2d" for configuration "Debug"
+set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_features2d PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_features2d.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_features2d.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_features2d.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_features2d.so.4.3"
   )
 
-# Import target "opencv_gapi" for configuration "RELEASE"
-set_property(TARGET opencv_gapi APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_gapi" for configuration "Debug"
+set_property(TARGET opencv_gapi APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_gapi PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_gapi.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_gapi.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_gapi.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_gapi.so.4.3"
   )
 
-# Import target "opencv_imgcodecs" for configuration "RELEASE"
-set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_imgcodecs" for configuration "Debug"
+set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_imgcodecs PROPERTIES
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_RELEASE "openjp2"
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_imgcodecs.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_imgcodecs.so.4.3"
+  IMPORTED_LINK_DEPENDENT_LIBRARIES_DEBUG "openjp2"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_imgcodecs.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_imgcodecs.so.4.3"
   )
 
-# Import target "opencv_videoio" for configuration "RELEASE"
-set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_videoio" for configuration "Debug"
+set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_videoio PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_videoio.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_videoio.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_videoio.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_videoio.so.4.3"
   )
 
-# Import target "opencv_calib3d" for configuration "RELEASE"
-set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_calib3d" for configuration "Debug"
+set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_calib3d PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_calib3d.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_calib3d.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_calib3d.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_calib3d.so.4.3"
   )
 
-# Import target "opencv_highgui" for configuration "RELEASE"
-set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_highgui" for configuration "Debug"
+set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_highgui PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_highgui.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_highgui.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_highgui.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_highgui.so.4.3"
   )
 
-# Import target "opencv_objdetect" for configuration "RELEASE"
-set_property(TARGET opencv_objdetect APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_objdetect" for configuration "Debug"
+set_property(TARGET opencv_objdetect APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_objdetect PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_objdetect.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_objdetect.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_objdetect.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_objdetect.so.4.3"
   )
 
-# Import target "opencv_stitching" for configuration "RELEASE"
-set_property(TARGET opencv_stitching APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_stitching" for configuration "Debug"
+set_property(TARGET opencv_stitching APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_stitching PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_stitching.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_stitching.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_stitching.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_stitching.so.4.3"
   )
 
-# Import target "opencv_video" for configuration "RELEASE"
-set_property(TARGET opencv_video APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opencv_video" for configuration "Debug"
+set_property(TARGET opencv_video APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_video PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_video.so.4.3.0"
-  IMPORTED_SONAME_RELEASE "libopencv_video.so.4.3"
+  IMPORTED_LOCATION_DEBUG "/home/ttz/git/opencv-4.3.0/build/lib/libopencv_video.so.4.3.0"
+  IMPORTED_SONAME_DEBUG "libopencv_video.so.4.3"
   )
 
 # This file does not depend on other imported targets which have

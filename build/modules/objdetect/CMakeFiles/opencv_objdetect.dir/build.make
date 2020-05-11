@@ -253,6 +253,8 @@ lib/libopencv_objdetect.so.4.3.0: modules/objdetect/CMakeFiles/opencv_objdetect.
 lib/libopencv_objdetect.so.4.3.0: modules/objdetect/CMakeFiles/opencv_objdetect.dir/opencl_kernels_objdetect.cpp.o
 lib/libopencv_objdetect.so.4.3.0: modules/objdetect/CMakeFiles/opencv_objdetect.dir/build.make
 lib/libopencv_objdetect.so.4.3.0: lib/libopencv_calib3d.so.4.3.0
+lib/libopencv_objdetect.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_objdetect.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_objdetect.so.4.3.0: 3rdparty/lib/libquirc.a
 lib/libopencv_objdetect.so.4.3.0: lib/libopencv_features2d.so.4.3.0
 lib/libopencv_objdetect.so.4.3.0: lib/libopencv_flann.so.4.3.0

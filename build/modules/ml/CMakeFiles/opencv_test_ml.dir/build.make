@@ -405,6 +405,8 @@ bin/opencv_test_ml: modules/ml/CMakeFiles/opencv_test_ml.dir/build.make
 bin/opencv_test_ml: lib/libopencv_ts.a
 bin/opencv_test_ml: lib/libopencv_ml.so.4.3.0
 bin/opencv_test_ml: lib/libopencv_highgui.so.4.3.0
+bin/opencv_test_ml: 3rdparty/lib/libippiw.a
+bin/opencv_test_ml: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_test_ml: lib/libopencv_videoio.so.4.3.0
 bin/opencv_test_ml: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_test_ml: lib/libopencv_imgproc.so.4.3.0

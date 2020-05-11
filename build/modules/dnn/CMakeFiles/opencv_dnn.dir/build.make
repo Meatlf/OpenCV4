@@ -2772,6 +2772,8 @@ lib/libopencv_dnn.so.4.3.0: modules/dnn/CMakeFiles/opencv_dnn.dir/layers/layers_
 lib/libopencv_dnn.so.4.3.0: modules/dnn/CMakeFiles/opencv_dnn.dir/layers/layers_common.avx512_skx.cpp.o
 lib/libopencv_dnn.so.4.3.0: modules/dnn/CMakeFiles/opencv_dnn.dir/build.make
 lib/libopencv_dnn.so.4.3.0: lib/libopencv_imgproc.so.4.3.0
+lib/libopencv_dnn.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_dnn.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_dnn.so.4.3.0: 3rdparty/lib/liblibprotobuf.a
 lib/libopencv_dnn.so.4.3.0: lib/libopencv_core.so.4.3.0
 lib/libopencv_dnn.so.4.3.0: modules/dnn/CMakeFiles/opencv_dnn.dir/link.txt

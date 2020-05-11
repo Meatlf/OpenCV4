@@ -143,6 +143,8 @@ lib/libopencv_highgui.so.4.3.0: modules/highgui/CMakeFiles/opencv_highgui.dir/sr
 lib/libopencv_highgui.so.4.3.0: modules/highgui/CMakeFiles/opencv_highgui.dir/src/window_gtk.cpp.o
 lib/libopencv_highgui.so.4.3.0: modules/highgui/CMakeFiles/opencv_highgui.dir/build.make
 lib/libopencv_highgui.so.4.3.0: lib/libopencv_videoio.so.4.3.0
+lib/libopencv_highgui.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_highgui.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_highgui.so.4.3.0: /usr/lib/x86_64-linux-gnu/libgtk-x11-2.0.so
 lib/libopencv_highgui.so.4.3.0: /usr/lib/x86_64-linux-gnu/libgdk-x11-2.0.so
 lib/libopencv_highgui.so.4.3.0: /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so

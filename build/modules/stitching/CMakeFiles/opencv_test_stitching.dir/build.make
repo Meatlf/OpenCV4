@@ -198,6 +198,8 @@ bin/opencv_test_stitching: lib/libopencv_ts.a
 bin/opencv_test_stitching: lib/libopencv_stitching.so.4.3.0
 bin/opencv_test_stitching: lib/libopencv_highgui.so.4.3.0
 bin/opencv_test_stitching: lib/libopencv_calib3d.so.4.3.0
+bin/opencv_test_stitching: 3rdparty/lib/libippiw.a
+bin/opencv_test_stitching: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 bin/opencv_test_stitching: lib/libopencv_videoio.so.4.3.0
 bin/opencv_test_stitching: lib/libopencv_imgcodecs.so.4.3.0
 bin/opencv_test_stitching: lib/libopencv_features2d.so.4.3.0

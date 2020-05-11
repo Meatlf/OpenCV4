@@ -13,6 +13,8 @@ set(CMAKE_C_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../3rdparty/quirc/include"
+  "3rdparty/ippicv/ippicv_lnx/icv/include"
+  "3rdparty/ippicv/ippicv_lnx/iw/include"
   "."
   )
 

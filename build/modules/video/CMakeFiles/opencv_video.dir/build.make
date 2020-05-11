@@ -360,6 +360,8 @@ lib/libopencv_video.so.4.3.0: modules/video/CMakeFiles/opencv_video.dir/src/vari
 lib/libopencv_video.so.4.3.0: modules/video/CMakeFiles/opencv_video.dir/opencl_kernels_video.cpp.o
 lib/libopencv_video.so.4.3.0: modules/video/CMakeFiles/opencv_video.dir/build.make
 lib/libopencv_video.so.4.3.0: lib/libopencv_calib3d.so.4.3.0
+lib/libopencv_video.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_video.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_video.so.4.3.0: lib/libopencv_features2d.so.4.3.0
 lib/libopencv_video.so.4.3.0: lib/libopencv_flann.so.4.3.0
 lib/libopencv_video.so.4.3.0: lib/libopencv_imgproc.so.4.3.0

@@ -2691,6 +2691,8 @@ lib/libopencv_core.so.4.3.0: modules/core/CMakeFiles/opencv_core.dir/split.avx2.
 lib/libopencv_core.so.4.3.0: modules/core/CMakeFiles/opencv_core.dir/sum.avx2.cpp.o
 lib/libopencv_core.so.4.3.0: modules/core/CMakeFiles/opencv_core.dir/matmul.avx512_skx.cpp.o
 lib/libopencv_core.so.4.3.0: modules/core/CMakeFiles/opencv_core.dir/build.make
+lib/libopencv_core.so.4.3.0: 3rdparty/lib/libippiw.a
+lib/libopencv_core.so.4.3.0: 3rdparty/ippicv/ippicv_lnx/icv/lib/intel64/libippicv.a
 lib/libopencv_core.so.4.3.0: /usr/lib/x86_64-linux-gnu/libtbb.so
 lib/libopencv_core.so.4.3.0: /usr/lib/x86_64-linux-gnu/libz.so
 lib/libopencv_core.so.4.3.0: 3rdparty/lib/libittnotify.a

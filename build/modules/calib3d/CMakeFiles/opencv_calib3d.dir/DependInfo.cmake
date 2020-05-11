@@ -49,6 +49,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "3rdparty/ippicv/ippicv_lnx/icv/include"
+  "3rdparty/ippicv/ippicv_lnx/iw/include"
   "."
   "../modules/calib3d/include"
   "modules/calib3d"
@@ -69,6 +71,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/ttz/git/opencv-4.3.0/build/modules/features2d/CMakeFiles/opencv_features2d.dir/DependInfo.cmake"
+  "/home/ttz/git/opencv-4.3.0/build/3rdparty/ippiw/CMakeFiles/ippiw.dir/DependInfo.cmake"
   "/home/ttz/git/opencv-4.3.0/build/modules/flann/CMakeFiles/opencv_flann.dir/DependInfo.cmake"
   "/home/ttz/git/opencv-4.3.0/build/modules/imgproc/CMakeFiles/opencv_imgproc.dir/DependInfo.cmake"
   "/home/ttz/git/opencv-4.3.0/build/modules/core/CMakeFiles/opencv_core.dir/DependInfo.cmake"
